@@ -29,7 +29,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: artifact
-        path: target/*.war
+        path: target/*.jar
 
   
   deploy:
@@ -43,4 +43,4 @@ jobs:
         name: artifact
         path: artifacts
     - name: Run Artifact
-      run: java -jar artifacts/*.war
+      run: java -jar artifacts/*.jar
