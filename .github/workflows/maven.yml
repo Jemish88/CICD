@@ -43,4 +43,4 @@ jobs:
         name: artifact
         path: artifacts
     - name: Run Artifact
-      run: java -jar artifact/*.war
+      run: java -jar artifacts/*.war
